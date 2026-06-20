@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada - Orgânic Foods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: { DEFAULT: '#3a7d44', light: '#5aad65', dark: '#1f4d28' },
+              orange: '#e07b30',
+              text: { DEFAULT: '#444444' },
+            },
+          },
+          fontFamily: {
+            display: ['"Montserrat"', 'sans-serif'],
+            body: ['"Open Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body text-brand-text bg-brand-green-dark min-h-screen flex items-center justify-center px-6">
+  <div class="text-center text-white max-w-md">
+    <img src="/images/logo.webp" alt="Orgânic Foods" class="w-16 h-16 rounded-full object-contain bg-white p-1 mx-auto mb-6">
+    <p class="text-brand-green-light text-sm font-semibold uppercase tracking-widest mb-2">Erro 404</p>
+    <h1 class="font-display text-3xl font-extrabold mb-4">Página não encontrada</h1>
+    <p class="text-green-100 mb-8">A página que você procura não existe ou foi movida.</p>
+    <a href="/" class="inline-flex bg-brand-orange text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors uppercase tracking-wide">Voltar ao início</a>
+  </div>
+</body>
+</html>

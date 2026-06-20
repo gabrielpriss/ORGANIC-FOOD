@@ -11,3 +11,6 @@ Thumbs.db
 # Briefing e materiais internos (não vão para produção)
 *.pdf
 briefing*
+
+# Fotos originais (JPEG) — produção usa WebP em images/ e */images/
+assets/
