@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: { colors: { brand: { green: { DEFAULT: '#3a7d44', light: '#5aad65', dark: '#1f4d28' }, orange: '#e07b30', gray: { light: '#f5f5f5', DEFAULT: '#e0e0e0' }, text: { DEFAULT: '#444444', dark: '#222222' } } }, fontFamily: { display: ['"Montserrat"', 'sans-serif'], body: ['"Open Sans"', 'sans-serif'] } } } }
+    tailwind.config = { theme: { extend: { colors: { brand: { green: { DEFAULT: '#3a7d44', light: '#5aad65', dark: '#1f4d28' }, orange: '#e07b30', red: '#c0392b', gray: { light: '#f5f5f5', DEFAULT: '#e0e0e0' }, text: { DEFAULT: '#444444', dark: '#222222' } } }, fontFamily: { display: ['"Montserrat"', 'sans-serif'], body: ['"Open Sans"', 'sans-serif'] } } } }
   </script>
 </head>
 <body class="font-body text-brand-text bg-white antialiased">
@@ -45,8 +45,8 @@
     <div class="absolute inset-0 bg-brand-green-dark/75"></div>
     <div class="relative z-10 text-center text-white px-6 max-w-3xl mx-auto py-16">
       <h1 class="font-display text-4xl lg:text-5xl font-extrabold mb-4">Nossos Produtos</h1>
-      <p class="text-lg text-gray-200 max-w-2xl mx-auto mb-3">Catálogo completo de hortaliças, legumes, tubérculos e aromáticos selecionados para distribuição.</p>
-      <p class="text-brand-green-light font-semibold uppercase tracking-widest text-sm">19 produtos disponíveis</p>
+      <p class="text-lg text-gray-200 max-w-2xl mx-auto mb-3">Catálogo completo de hortaliças, legumes, tubérculos, aromáticos, folhosas e frutas selecionados para distribuição.</p>
+      <p class="text-brand-green-light font-semibold uppercase tracking-widest text-sm">48 produtos disponíveis</p>
     </div>
   </section>
 
@@ -58,6 +58,8 @@
         <button data-filter="legumes" class="filter-btn bg-white text-brand-text text-xs font-bold px-5 py-2 rounded-full uppercase tracking-wide hover:bg-brand-green hover:text-white transition-colors">Legumes</button>
         <button data-filter="tuberculos" class="filter-btn bg-white text-brand-text text-xs font-bold px-5 py-2 rounded-full uppercase tracking-wide hover:bg-brand-green hover:text-white transition-colors">Tubérculos</button>
         <button data-filter="aromaticos" class="filter-btn bg-white text-brand-text text-xs font-bold px-5 py-2 rounded-full uppercase tracking-wide hover:bg-brand-green hover:text-white transition-colors">Aromáticos</button>
+        <button data-filter="folhosas" class="filter-btn bg-white text-brand-text text-xs font-bold px-5 py-2 rounded-full uppercase tracking-wide hover:bg-brand-green hover:text-white transition-colors">Folhosas</button>
+        <button data-filter="frutas" class="filter-btn bg-white text-brand-text text-xs font-bold px-5 py-2 rounded-full uppercase tracking-wide hover:bg-brand-green hover:text-white transition-colors">Frutas</button>
       </div>
 
       <div id="produtos-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -258,6 +260,308 @@
             <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
           </div>
         </div>
+
+        <!-- Aromáticos (novos) -->
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="aromaticos">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-orange/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Aromáticos</span>
+            <img src="images/salsa.jpeg" alt="Salsa" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Salsa</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="aromaticos">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-orange/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Aromáticos</span>
+            <img src="images/cebolinha.jpeg" alt="Cebolinha" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Cebolinha</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="aromaticos">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-orange/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Aromáticos</span>
+            <img src="images/cebola-verde.jpeg" alt="Cebola Verde" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Cebola Verde</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+
+        <!-- Folhosas -->
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="folhosas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-green-light/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Folhosas</span>
+            <img src="images/alface-crespa.jpeg" alt="Alface Crespa" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Alface Crespa</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="folhosas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-green-light/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Folhosas</span>
+            <img src="images/alface-americana.jpeg" alt="Alface Americana" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Alface Americana</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="folhosas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-green-light/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Folhosas</span>
+            <img src="images/alface-roxa.jpeg" alt="Alface Roxa" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Alface Roxa</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="folhosas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-green-light/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Folhosas</span>
+            <img src="images/rucula.jpeg" alt="Rúcula" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Rúcula</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="folhosas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-green-light/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Folhosas</span>
+            <img src="images/espinafre.jpeg" alt="Espinafre" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Espinafre</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+
+        <!-- Frutas -->
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/banana.jpeg" alt="Banana" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Banana</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <a href="https://clkdmg.site/pay/maca-chilena-importada-caixa-de-20-kilos" target="_blank" rel="noopener" class="block cursor-pointer">
+            <div class="aspect-square bg-white p-4 relative">
+              <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+              <img src="images/maca.jpeg" alt="Maçã Chilena" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-5 text-center border-t border-brand-gray-light">
+              <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Maçã Chilena</h5>
+              <span class="inline-block bg-brand-orange text-white text-xs font-bold px-6 py-2 rounded group-hover:bg-orange-600 transition-colors uppercase tracking-wide">Comprar</span>
+            </div>
+          </a>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/laranja.jpeg" alt="Laranja" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Laranja</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/melao.jpeg" alt="Melão" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Melão</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/manga.jpeg" alt="Manga" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Manga</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/abacaxi.jpeg" alt="Abacaxi" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Abacaxi</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/melancia.jpeg" alt="Melancia" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Melancia</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/uva.jpeg" alt="Uva" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Uva</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/limao.jpeg" alt="Limão" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Limão</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/abacate.jpeg" alt="Abacate" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Abacate</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/goiaba.jpeg" alt="Goiaba" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Goiaba</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/tangerina.jpeg" alt="Tangerina" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Tangerina</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/pera.jpeg" alt="Pera" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Pera</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/coco.jpeg" alt="Coco" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Coco</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/maracuja.jpeg" alt="Maracujá" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Maracujá</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/acerola.jpeg" alt="Acerola" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Acerola</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <a href="https://clkdmg.site/pay/caqui-fuyu-organico-caixa-15-kilos" target="_blank" rel="noopener" class="block cursor-pointer">
+            <div class="aspect-square bg-white p-4 relative">
+              <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+              <img src="images/caqui.jpeg" alt="Caqui Fuyu" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-5 text-center border-t border-brand-gray-light">
+              <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Caqui Fuyu</h5>
+              <span class="inline-block bg-brand-orange text-white text-xs font-bold px-6 py-2 rounded group-hover:bg-orange-600 transition-colors uppercase tracking-wide">Comprar</span>
+            </div>
+          </a>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/jaca.jpeg" alt="Jaca" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Jaca</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <a href="https://clkdmg.site/pay/kiwi-organico-importada-caixa-15-kilos" target="_blank" rel="noopener" class="block cursor-pointer">
+            <div class="aspect-square bg-white p-4 relative">
+              <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+              <img src="images/kiwi.jpeg" alt="Kiwi" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-5 text-center border-t border-brand-gray-light">
+              <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Kiwi</h5>
+              <span class="inline-block bg-brand-orange text-white text-xs font-bold px-6 py-2 rounded group-hover:bg-orange-600 transition-colors uppercase tracking-wide">Comprar</span>
+            </div>
+          </a>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/pitaya.jpeg" alt="Pitaya" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Pitaya</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
+        <div class="produto-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group" data-categoria="frutas">
+          <div class="aspect-square bg-white p-4 relative">
+            <span class="absolute top-3 left-3 z-10 bg-brand-red/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Frutas</span>
+            <img src="images/ameixa.jpeg" alt="Ameixa" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-5 text-center border-t border-brand-gray-light">
+            <h5 class="font-display text-base font-bold uppercase text-brand-text-dark tracking-wide mb-3">Ameixa</h5>
+            <a href="/contato/" class="inline-block bg-brand-green text-white text-xs font-bold px-6 py-2 rounded hover:bg-brand-green-dark transition-colors uppercase tracking-wide">Solicitar</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -303,6 +607,7 @@
     </div>
     <div class="border-t border-green-800/50 pt-8 text-center px-6">
       <p class="text-green-300/60 text-xs">© 2026 Orgânic Foods. Todos os direitos reservados.</p>
+      <p class="text-green-300/60 text-xs mt-2">CNPJ: 28.453.672/0001-71</p>
     </div>
   </footer>
 
